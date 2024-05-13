@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>첫 페이지 구성</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #container{
+            width: 1200px;
+            margin: 20px auto;
+        }
+        #header{
+            position: relative;
+            width: 100%;
+            height: 161px;
+            background-color: #acacac;
+        }
+        #sidebar{
+            width: 200px;
+            height: 600px;
+            background-color: #e9e9e9e9;
+            float: left;
+        }
+        #contents{
+            width: 600px;
+            height: 600px;
+            border: #f7f7f7;
+            background-color: rgba(7, 111, 247, 0.952);
+            float: left;
+        }
+       
+        #contents2{
+            width: 400px;
+            height: 600px;
+            border: 1px solid #f7f7f7;
+            float: left;
+        }
+        #footer{
+            width: 100%;
+            height: 50px;
+            background-color: #888888;
+            clear: left;
+        }
+        #rogo{
+            width: 80%;
+            height: 120px;
+            background-color: #38ff06;
+            float: left;
+        }
+        #so{
+            width: 20%;
+            height: 120px;
+            float: left;
+        }
+        #login{
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .myNav{
+            background-color: #ccc;
+        }
+        ul{
+                list-style-type: none;
+               
+            }
+            ul li{
+                float: left;
+                width: 13%;
+                height: 40px;
+                margin: 0 7px;
+            }
+            a{
+                display:  block;
+                padding: 10px 20px;
+                background-color: #acacac;
+            }
+            a:link, a:visited{
+                color: black;
+                text-decoration: none;
+            }
+            a:hover{
+                background-color: #000;
+                color:#fff;
+            }
+        .log{
+            width: 60px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: white;
+            float: right;
+            font-size: 10px;
+            text-align: center;
+            line-height: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="rogo">
+                <h1>사이트 로고</h1>
+                
+            </div>
+            <div id="so">
+                <div id="login">
+                    <div class="log">회원가입</div>
+                    <div class="log">로그인</div>
+                    <div class="log">개인페이지</div>
+                </div>
+            </div>
+            <nav id="myNav">
+                <ul>
+                    <li><a href="#">사이트소개</a></li>
+                    <li><a href="#">공지</a></li>
+                    <li><a href="#">회원정보</a></li>
+                    <li><a href="#">게시판</a></li>
+                    <li><a href="#">대화</a></li>
+                    <li><a href="#">진행상황</a></li>
+                    <li><a href="#">성공사례</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <aside id="sidebar">
+            <h2>로그인 관련 정보</h2>
+        </aside>
+        <section id="contents">
+            <h2>API 정보</h2>
+        </section>
+        <section id="contents2">
+            <h2>게시글 제목 리스트</h2>
+        </section>
+        <footer id="footer">
+            <h2>회사소개</h2>
+        </footer>
+    </div>
+</body>
+</html>
